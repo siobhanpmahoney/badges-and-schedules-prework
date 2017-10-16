@@ -13,5 +13,5 @@ def assign_rooms (speakers)
 end
 
 def printer (attendees)
-  puts attendees.collect {|i| batch_badge_creator(attendees)[attendees.find_index(i)] +  assign_rooms(attendees)[attendees.find_index(i)]}
+  attendees.collect {|i| puts batch_badge_creator(attendees)[attendees.find_index(i)] +  assign_rooms(attendees)[attendees.find_index(i)]}
 end
